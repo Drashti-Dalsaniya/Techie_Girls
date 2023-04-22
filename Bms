@@ -24,6 +24,10 @@ class account
     {
         cout<<setw(10)<<":: ENTER THE ACCOUNT DETAILS ::"<<endl;
     }
+    void space2()
+    {
+        cout<<setw(10)<<":: ACCOUNT DETAILS ::"<<endl;
+    }
     void getdata();
     void putdata();
 };
