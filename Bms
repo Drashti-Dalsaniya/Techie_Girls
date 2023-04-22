@@ -105,6 +105,19 @@ class new_acc
        cin>>email;
        cout<<"Enter your aadhar number: ";
        cin>>aadhar_num;
+       cout<<"Enter district name: ";
+       cin>>district;
+       cout<<"city name: ";
+       cin>>city;
+       cout<<"Enter state name: ";
+       cin>>state;
+       cout<<"Enter pincode: ";
+       cin>>pincode;
+       cout<<"Enter your annual income: ";
+       cin>>annual_income;
+       cout<<"Enter the type of account: ";
+       cin>>type;
+
 int main()
 {
      account A;
