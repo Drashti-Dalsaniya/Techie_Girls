@@ -88,5 +88,21 @@ int main()
     int num;
     cout<<"Enter any number from 1 to 6 : ";
     cin>>num;
+    switch(num)
+   {
+    case 1:
+             cout<<"New account"<<endl;
+             break;
+    case 2:
+              D.getdata();
+              D.Dep();
+              D.putdata();
+              break;
+    case 3:
+             W.getdata();
+             W.With();
+             W.putdata();
+             break;
+   
 
 }
