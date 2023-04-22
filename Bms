@@ -46,3 +46,16 @@ class Deposit : public account
             cout<<"total amount is :"<<total<<endl;
      }
 };
+class Withdrawal : public account
+ {
+    protected:
+    long double acc_balance,deposit,withdrawal,total;
+    public:
+    void With()
+    {
+            cout<<"Withdrawal amount : ";
+            cin>>withdrawal;
+            total=acc_balance-withdrawal;
+            cout<<"total amount is :"<<total<<endl;
+    }
+ };
