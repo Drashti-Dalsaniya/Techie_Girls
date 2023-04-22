@@ -8,6 +8,18 @@ class account
     string name;
     char acc_type;
     public:
+     void pattern()
+    {
+        int a=1,b=80;
+        for(int i=0;i<a;i++)
+        {
+            for(int j=0;j<b;j++)
+            {
+                cout<<"*";
+            }
+            cout<<endl;
+        }
+    }
     void getdata();
     void putdata();
 };
