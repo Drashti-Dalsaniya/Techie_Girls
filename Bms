@@ -204,7 +204,16 @@ int main()
              D.putdata();
              break;
     case 3:
-            
+             W.pattern();
+             W.space1();
+             W.pattern();
+             W.getdata();
+             W.With();
+             W.pattern();
+             W.space2();
+             W.pattern();
+             W.putdata();
+             break;
     case 4:
              cout<<"Balance Enquiry"<<endl;
              break;
