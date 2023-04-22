@@ -114,7 +114,7 @@ class new_acc : public account
     {
        cout<<"Enter the first name of account holder : ";
        cin>>first_name;
-       cout<<"Enter second name of account holder : ";
+       cout<<"Enter the last name of account holder : ";
        cin>>last_name;
        cout<<"Enter your Father's name : ";
        cin>>f_name;
