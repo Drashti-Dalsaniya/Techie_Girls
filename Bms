@@ -100,68 +100,73 @@ class Withdrawal : public account
             cout<<"Reason why are you closing an account is: "<<reason<<endl;
     }
 };
-class new_acc
+class new_acc : public account
 {
     protected:
-    double aadhar_num,phn_no,pincode,annual_income;
+    unsigned long long int aadhar_num,phn_no,annual_income;
+    double pincode;
     string dob,address,email,district,taluka,city,state,type;
     int age;
-    string first_name,last_name,f_name,m_name,marital;
-    char gender;
+    string first_name,last_name,f_name,m_name,marital,gender;
     public:
     void Get_data()
     {
-       cout<<"Enter the first name of account holder: ";
+       cout<<"Enter the first name of account holder : ";
        cin>>first_name;
-       cout<<"Enter second name of account holder: ";
+       cout<<"Enter second name of account holder : ";
        cin>>last_name;
-       cout<<"Enter your Father's name";
+       cout<<"Enter your Father's name : ";
        cin>>f_name;
        cout<<"Enter your date of birth : ";
        cin>>dob;
-       cout<<"Enter your age:";
+       cout<<"Enter your age : ";
        cin>>age;
-       cout<<"Enter your Gender: ";
+       cout<<"Enter your Gender : ";
        cin>>gender;
-       cout<<"Enter martial status: ";
-       cin>>martial;
-       cout<<"Enter your phone number: ";
-       cin>>>phn_no;
-       cout<<"Enter your email address: ";
+       cout<<"Enter marital status : ";
+       cin>>marital;
+       cout<<"Enter your phone number : ";
+       cin>>phn_no;
+       cout<<"Enter your email address : ";
        cin>>email;
-       cout<<"Enter your aadhar number: ";
+       cout<<"Enter your aadhar number : ";
        cin>>aadhar_num;
-       cout<<"Enter district name: ";
-       cin>>district;
-       cout<<"city name: ";
+       cout<<"Enter your address : ";
+       cin>>address;
+       cout<<"Enter city name : ";
        cin>>city;
-       cout<<"Enter state name: ";
-       cin>>state;
-       cout<<"Enter pincode: ";
+       cout<<"Enter pincode : ";
        cin>>pincode;
-       cout<<"Enter your annual income: ";
+       cout<<"Enter district name : ";
+       cin>>district;
+       cout<<"Enter taluka name : ";
+       cin>>taluka;
+       cout<<"Enter state name : ";
+       cin>>state;
+       cout<<"Enter your annual income : ";
        cin>>annual_income;
-       cout<<"Enter the type of account: ";
+       cout<<"Enter the type of account : ";
        cin>>type;
     }
     void Put_data()
     {
-       cout<<"The first name is"<<first_name<<endl; 
-       cout<<"The last name is"<<last_name<<endl; 
-       cout<<"The father's name is"<<f_name<<endl;
-       cout<<"Date of birth is"<<dob<<endl;
-       cout<<"Age is"<<age<<endl; 
-       cout<<"Gender is"<gender<<endl;
-       cout<<"The martial status is"<<martial<<endl;  
-       cout<<"Phone number is"<<phn_no<<endl;
-       cout<<"Email Id"<<email<<endl;  
-       cout<<"Aadhar Number"<<aadhar_num<<endl; 
-       cout<<"District is"<<district<<endl;
-       cout<<"City is"<<city<<endl;
-       cout<<"Pincode is"<<pincode<<endl;
-       cout<<"State is"<<state<<endl; 
-       cout<<"Annual income is"<<annual_income<<endl;    
-       cout<<"Type of your account is"<<type<<endl;    
+       cout<<"The first name is "<<first_name<<endl;
+       cout<<"The last name is "<<last_name<<endl;
+       cout<<"The father's name is "<<f_name<<endl;
+       cout<<"Date of birth is "<<dob<<endl;
+       cout<<"Age is "<<age<<endl;
+       cout<<"Gender is "<<gender<<endl;
+       cout<<"The martial status is "<<marital<<endl;
+       cout<<"Phone number is "<<phn_no<<endl;
+       cout<<"Email Id is "<<email<<endl;
+       cout<<"Aadhar Number is "<<aadhar_num<<endl;
+       cout<<"City is "<<city<<endl;
+       cout<<"Pincode is "<<pincode<<endl;
+       cout<<"Taluka is "<<taluka<<endl;
+       cout<<"District is "<<district<<endl;
+       cout<<"State is "<<state<<endl;
+       cout<<"Annual income is "<<annual_income<<endl;
+       cout<<"Type of your account is "<<type<<endl;
     }
 };
 
