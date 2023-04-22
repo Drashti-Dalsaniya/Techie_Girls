@@ -35,8 +35,6 @@ void account :: putdata()
     }
 class Deposit : public account
 {
-    protected:
-    long double acc_balance,deposit,withdrawal,total;
     public:
     void Dep()
      {
@@ -48,8 +46,6 @@ class Deposit : public account
 };
 class Withdrawal : public account
  {
-    protected:
-    long double acc_balance,deposit,withdrawal,total;
     public:
     void With()
     {
@@ -61,11 +57,8 @@ class Withdrawal : public account
  };
  class close : public account
 {
-    long double acc_balance,deposit,withdrawal,total;
-    unsigned long long int acc_no,ph_no;
-    string name;
-     public:
      string reason;
+     public:
      void gtdata()
     {
             cout<<"Enter the name of account holder : ";
