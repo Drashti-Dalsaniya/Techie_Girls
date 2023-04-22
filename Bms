@@ -86,7 +86,6 @@ class new_acc
     int age;
     string first_name,last_name,f_name,m_name,marital;
     char gender;
-    public:
 int main()
 {
      account A;
