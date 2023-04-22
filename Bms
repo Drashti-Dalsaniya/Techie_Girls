@@ -33,3 +33,16 @@ void account :: putdata()
             cout<<"The total amount of your account is : "<<total<<endl;
 
     }
+class Deposit : public account
+{
+    protected:
+    long double acc_balance,deposit,withdrawal,total;
+    public:
+    void Dep()
+     {
+            cout<<"Deposit amount : ";
+            cin>>deposit;
+            total=acc_balance+deposit;
+            cout<<"total amount is :"<<total<<endl;
+     }
+};
