@@ -79,6 +79,14 @@ class Withdrawal : public account
             cout<<"Reason why are you closing an account is: "<<reason<<endl;
     }
 };
+class new_acc
+{
+    double aadhar_num,phn_no,pincode,annual_income;
+    string dob,address,email,district,taluka,city,state,type;
+    int age;
+    string first_name,last_name,f_name,m_name,marital;
+    char gender;
+    public:
 int main()
 {
      account A;
