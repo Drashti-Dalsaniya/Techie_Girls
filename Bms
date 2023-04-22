@@ -131,6 +131,17 @@ class new_acc
        cout<<"Age is"<<age<<endl; 
        cout<<"Gender is"<gender<<endl;
        cout<<"The martial status is"<<martial<<endl;  
+       cout<<"Phone number is"<<phn_no<<endl;
+       cout<<"Email Id"<<email<<endl;  
+       cout<<"Aadhar Number"<<aadhar_num<<endl; 
+       cout<<"District is"<<district<<endl;
+       cout<<"City is"<<city<<endl;
+       cout<<"Pincode is"<<pincode<<endl;
+       cout<<"State is"<<state<<endl; 
+       cout<<"Annual income is"<<annual_income<<endl;    
+       cout<<"Type of your account is"<<type<<endl;    
+    }
+};
 
 int main()
 {
