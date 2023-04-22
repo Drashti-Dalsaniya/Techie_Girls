@@ -59,3 +59,21 @@ class Withdrawal : public account
             cout<<"total amount is :"<<total<<endl;
     }
  };
+ class close : public account
+{
+    long double acc_balance,deposit,withdrawal,total;
+    unsigned long long int acc_no,ph_no;
+    string name;
+     public:
+     string reason;
+     void gtdata()
+    {
+            cout<<"Enter the name of account holder : ";
+            cin>>name;
+            cout<<"Enter the phone number : ";
+            cin>>ph_no;
+            cout<<"Enter the account number : ";
+            cin>>acc_no;
+            cout<<"Reason why are you closing an account :";
+            cin>>reason;
+    }
