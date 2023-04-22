@@ -162,10 +162,10 @@ int main()
              N.Put_data();
              break;
     case 2:
-              D.getdata();
-              D.Dep();
-              D.putdata();
-              break;
+             D.getdata();
+             D.Dep();
+             D.putdata();
+             break;
     case 3:
              W.getdata();
              W.With();
@@ -183,6 +183,7 @@ int main()
              break;
     default:
              cout<<"Exit"<<endl;
+             break;
 
     }
     return 0;
