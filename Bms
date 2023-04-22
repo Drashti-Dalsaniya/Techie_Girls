@@ -121,6 +121,16 @@ class new_acc
        cin>>annual_income;
        cout<<"Enter the type of account: ";
        cin>>type;
+    }
+       void Putdata()
+    {
+       cout<<"The first name is"<<first_name<<endl; 
+       cout<<"The last name is"<<last_name<<endl; 
+       cout<<"The father's name is"<<f_name<<endl;
+       cout<<"Date of birth is"<<dob<<endl;
+       cout<<"Age is"<<age<<endl; 
+       cout<<"Gender is"<gender<<endl;
+       cout<<"The martial status is"<<martial<<endl;  
 
 int main()
 {
