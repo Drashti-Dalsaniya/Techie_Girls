@@ -221,7 +221,13 @@ int main()
              cout<<"Modify an account"<<endl;
              break;
     case 6:
+             C.pattern();
+             C.space1();
+             C.pattern();
              C.gtdata();
+             C.pattern();
+             C.space2();
+             C.pattern();
              C.ptdata();
              break;
     default:
