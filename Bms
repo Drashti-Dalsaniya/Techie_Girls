@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 class account
-{
+{   
+    protected:
     long double deposit,withdrawal,total;
     unsigned long long int acc_no,ph_no,acc_balance;
     string name;
@@ -78,3 +79,14 @@ class Withdrawal : public account
             cout<<"Reason why are you closing an account is: "<<reason<<endl;
     }
 };
+int main()
+{
+     account A;
+     Withdrawal W;
+     Deposit D;
+     close C;
+    int num;
+    cout<<"Enter any number from 1 to 6 : ";
+    cin>>num;
+
+}
