@@ -103,6 +103,20 @@ int main()
              W.With();
              W.putdata();
              break;
-   
+    case 4:
+             cout<<"Balance Enquiry"<<endl;
+             break;
+    case 5:
+             cout<<"Modify an account"<<endl;
+             break;
+    case 6:
+             C.gtdata();
+             C.ptdata();
+             break;
+    default:
+             cout<<"Exit"<<endl;
+
+    }
+    return 0;
 
 }
