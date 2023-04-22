@@ -95,6 +95,10 @@ class new_acc
        cin>>last_name;
        cout<<"Enter your Father's name";
        cin>>f_name;
+       cout<<"Enter your date of birth : ";
+       cin>>dob;
+       cout<<"Enter your age:";
+       cin>>age;
        cout<<"Gender: ";
        cin>>gender;
        cout<<"Enter martial status: ";
