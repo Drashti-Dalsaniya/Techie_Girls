@@ -86,6 +86,19 @@ class new_acc
     int age;
     string first_name,last_name,f_name,m_name,marital;
     char gender;
+    public:
+    void Get_data()
+    {
+       cout<<"Enter the first name of account holder: ";
+       cin>>first_name;
+       cout<<"Enter second name of account holder: ";
+       cin>>last_name;
+       cout<<"Enter your Father's name";
+       cin>>f_name;
+       cout<<"Gender: ";
+       cin>>gender;s
+       cout<<"Enter martial status: ";
+       cin>>martial;
 int main()
 {
      account A;
