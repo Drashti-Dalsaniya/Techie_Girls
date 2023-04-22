@@ -99,6 +99,12 @@ class new_acc
        cin>>gender;
        cout<<"Enter martial status: ";
        cin>>martial;
+       cout<<"Enter your phone number: ";
+       cin>>>phn_no;
+       cout<<"Enter your email address: ";
+       cin>>email;
+       cout<<"Enter your aadhar number: ";
+       cin>>aadhar_num;
 int main()
 {
      account A;
