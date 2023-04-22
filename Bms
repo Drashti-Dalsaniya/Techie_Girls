@@ -183,7 +183,13 @@ int main()
     switch(num)
    {
     case 1
+             N.pattern();
+             N.space1();
+             N.pattern();
              N.Get_data();
+             N.pattern();
+             N.space2();
+             N.pattern();
              N.Put_data();
              break;
     case 2:
