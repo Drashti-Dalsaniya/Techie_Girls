@@ -96,7 +96,7 @@ class new_acc
        cout<<"Enter your Father's name";
        cin>>f_name;
        cout<<"Gender: ";
-       cin>>gender;s
+       cin>>gender;
        cout<<"Enter martial status: ";
        cin>>martial;
 int main()
