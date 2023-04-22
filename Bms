@@ -77,3 +77,11 @@ class Withdrawal : public account
             cout<<"Reason why are you closing an account :";
             cin>>reason;
     }
+    void ptdata()
+    {
+            cout<<"The name of account holder : "<<name<<endl;
+            cout<<"The phone number : "<<ph_no<<endl;
+            cout<<"The account number : "<<acc_no<<endl;
+            cout<<"Reason why are you closing an account is: "<<reason<<endl;
+    }
+};
