@@ -101,7 +101,7 @@ class new_acc
        cin>>dob;
        cout<<"Enter your age:";
        cin>>age;
-       cout<<"Gender: ";
+       cout<<"Enter your Gender: ";
        cin>>gender;
        cout<<"Enter martial status: ";
        cin>>martial;
