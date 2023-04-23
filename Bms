@@ -494,7 +494,11 @@ int main()
              cout<<"Exit"<<endl;
              break;
 
-    
+    default:
+             cout<<"No such case is found."<<endl;
+             break;
+
+    }
     return 0;
 
 }
