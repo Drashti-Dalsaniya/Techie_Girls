@@ -489,9 +489,11 @@ int main()
              goto repeat;
              break;
 
+    
     case 8:
-             cout<<"Check the details"<<endl;
+             cout<<"Exit"<<endl;
              break;
+
     case 9:
              cout<<"For transaction"<<endl;
              break;
