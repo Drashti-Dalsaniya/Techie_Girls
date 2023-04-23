@@ -78,6 +78,30 @@ class transaction : public account
     }
 
  };
+ void transaction::enquiry1()
+{
+    {
+             int SUM;
+             if(SUM!=0)
+             {
+                cout<<"No data is entered"<<endl;
+             }
+             else
+             {
+
+                  cout<<"Enter the phone number for account you are searching for used during transaction : ";
+                 cin>>phone;
+                 if(phone==ph_no)
+                 {
+                       cout<<"The total balance is "<<acc_balance<<endl;
+                 }
+                 else
+                 {
+                   cout<<"Entered phone number is invalid"<<endl;
+                 }
+             }
+    }
+}
  class close : public account
 {
     protected:
