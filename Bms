@@ -2,24 +2,31 @@
 #include<iomanip>
 using namespace std;
 class account
-{   
+{
+    protected:
+    struct person
+    {
+        string name;
+    }p[50];
     protected:
     long double deposit,withdrawal,total;
-    unsigned long long int acc_no,ph_no,acc_balance;
-    string name;
+    unsigned long long int acc_no,acc_balance,net_bal;
+
+    int sum=0;
     char acc_type;
     public:
-     void pattern()
+        string name;
+        int i;
+        unsigned long long int ph_no,phone;
+    void pattern()
     {
-        int a=1,b=80;
+        int a=80;
         for(int i=0;i<a;i++)
-        {
-            for(int j=0;j<b;j++)
+
             {
                 cout<<"*";
             }
             cout<<endl;
-        }
     }
      void space1()
     {
