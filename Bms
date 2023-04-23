@@ -198,6 +198,10 @@ class new_acc : public account
     int age;
     string first_name,last_name,f_name,m_name,marital,gender;
     public:
+    void show();
+    void change();
+    void enquiry();
+    void check();
     void Get_data()
     {
        cout<<"Enter the first name of account holder : ";
@@ -236,6 +240,8 @@ class new_acc : public account
        cin>>annual_income;
        cout<<"Enter the type of account : ";
        cin>>type;
+       cout<<"Enter the amount you would like to deposit : ";
+       cin>>net_bal;
     }
     void Put_data()
     {
@@ -256,6 +262,7 @@ class new_acc : public account
        cout<<"State is "<<state<<endl;
        cout<<"Annual income is "<<annual_income<<endl;
        cout<<"Type of your account is "<<type<<endl;
+       cout<<"Amount you would like to deposit : "<<net_bal<<endl;
     }
 };
 void new_acc::enquiry()
