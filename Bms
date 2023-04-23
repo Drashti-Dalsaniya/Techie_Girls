@@ -55,7 +55,29 @@ void account :: putdata()
             cout<<"The total amount of your account is : "<<total<<endl;
 
     }
+class transaction : public account
+{
+    public:
+    void show1();
+    void enquiry1();
+    void change1();
+    void check1();
+    void Dep()
+     {
+            cout<<"Deposit amount : ";
+            cin>>deposit;
+            total=acc_balance+deposit;
+            cout<<"total amount is :"<<total<<endl;
+     }
+    void With()
+    {
+            cout<<"Withdrawal amount : ";
+            cin>>withdrawal;
+            total=acc_balance-withdrawal;
+            cout<<"total amount is :"<<total<<endl;
+    }
 
+ };
  class close : public account
 {
     protected:
