@@ -174,12 +174,25 @@ class new_acc : public account
 int main()
 {
      account A;
+     view V;
      Withdrawal W;
      Deposit D;
      close C;
-     new_acc N;
-    int num;
-    cout<<"Enter any number from 1 to 6 : ";
+    new_acc N;
+    char repeat;
+    int i,sam,num,sum=0;
+    cout<<"1. Create An Account"<<endl;
+    cout<<"2. Deposit Amount"<<endl;
+    cout<<"3. Withdraw Amount"<<endl;
+    cout<<"4. Balance Enquiry"<<endl;
+    cout<<"5. Update information of existing account"<<endl;
+    cout<<"6. Remove existing account"<<endl;
+    cout<<"7. Name of the all account holders"<<endl;
+	cout<<"8. Check the details of an existing account"<<endl;
+	cout<<"9. For transactions"<<endl;
+	cout<<"10. Exit"<<endl;
+	repeat;
+    cout<<"Select Your Option from 1 to 10 : ";
     cin>>num;
     switch(num)
    {
