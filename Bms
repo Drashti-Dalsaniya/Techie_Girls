@@ -28,13 +28,13 @@ class account
             }
             cout<<endl;
     }
-     void space1()
+    void space1()
     {
-        cout<<setw(10)<<":: ENTER THE ACCOUNT DETAILS ::"<<endl;
+        cout<<"\t\t\t:: ENTER THE ACCOUNT DETAILS ::"<<endl;
     }
     void space2()
     {
-        cout<<setw(10)<<":: ACCOUNT DETAILS ::"<<endl;
+        cout<<"\t\t\t:: ACCOUNT DETAILS ::"<<endl;
     }
     void getdata();
     void putdata();
