@@ -261,6 +261,12 @@ int main()
                 V.show();
             }
             break;
+    case 8:
+             cout<<"Check the details"<<endl;
+             break;
+    case 9:
+             cout<<"For transaction"<<endl;
+             break;
     default:
              cout<<"Exit"<<endl;
              break;
