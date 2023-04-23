@@ -129,6 +129,10 @@ void transaction::change1()
              }
     }
 }
+void transaction::show1()
+{
+		     cout<<"The name of account holder is "<<name<<endl;
+}
  class close : public account
 {
     protected:
