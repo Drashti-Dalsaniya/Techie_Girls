@@ -102,6 +102,33 @@ class transaction : public account
              }
     }
 }
+void transaction::change1()
+{
+    {
+             new_acc N;
+             int SUM;
+             if(SUM!=0)
+             {
+
+                 cout<<"Enter the phone number for account you are searching for used during transaction : "<<endl;
+                 cin>>phone;
+                 if(phone==ph_no)
+                 {
+                   cout<<"Enter your New Details"<<endl;
+                   N.getdata();
+                   N.putdata();
+                 }
+                 else
+                 {
+                   cout<<"Entered phone number is invalid"<<endl;
+                 }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
+    }
+}
  class close : public account
 {
     protected:
