@@ -418,16 +418,26 @@ int main()
 
             goto repeat;
             break;
-    case 7:
-             if(sum==0)
-            {
-				cout<<"No data is entered"<<endl;
-			}
-            else
-            {
-                V.show();
-            }
-            break;
+     case 7:
+
+             if(SUM!=0)
+             {
+                 if(sum!=0)
+                  {
+                       N.check();
+                  }
+                  if(sum3!=0)
+                  {
+                       T.check1();
+                  }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
+             goto repeat;
+             break;
+
     case 8:
              cout<<"Check the details"<<endl;
              break;
