@@ -387,16 +387,27 @@ int main()
              goto repeat;
              break;
     
-    case 6:
-             C.pattern();
-             C.space1();
-             C.pattern();
-             C.gtdata();
-             C.pattern();
-             C.space2();
-             C.pattern();
-             C.ptdata();
-             break;
+     case 6:
+          if(sum==0)
+            {
+
+				cout<<"No data is entered"<<endl;
+			}
+          else
+            {
+                N.show();
+            }
+          if(sum3==0)
+            {
+				cout<<"No data is entered"<<endl;
+			}
+          else
+            {
+                T.show1();
+            }
+
+            goto repeat;
+            break;
     case 7:
              if(sum==0)
             {
