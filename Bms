@@ -252,6 +252,7 @@ int main()
              N.space2();
              N.pattern();
              N.Put_data();
+             goto repeat;
              break;
     case 2:
              char trans,D,W;
@@ -283,6 +284,9 @@ int main()
              T.pattern();
              T.putdata();
              }
+             goto repeat;
+             break;
+
     case 4:
              cout<<"Balance Enquiry"<<endl;
              break;
