@@ -195,6 +195,30 @@ class new_acc : public account
        cout<<"Type of your account is "<<type<<endl;
     }
 };
+void new_acc::enquiry()
+{
+    {
+             int SUM;
+             if(SUM!=0)
+             {
+
+                 cout<<"Enter the phone number for account you are searching for created account : ";
+                 cin>>phone;
+                 if(phone==phn_no)
+                 {
+                       cout<<"The total balance is "<<net_bal<<endl;
+                 }
+                 else
+                 {
+                   cout<<"Entered phone number is invalid"<<endl;
+                 }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
+    }
+}
 
 int main()
 {
