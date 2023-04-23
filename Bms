@@ -340,8 +340,23 @@ int main()
              }
              goto repeat;
              break;
-
     case 3:
+             if(SUM!=0)
+             {
+                 if(sum!=0)
+                    {
+                          N.enquiry();
+                    }
+                 if(sum3!=0)
+                    {
+                          T.enquiry1();
+                    }
+             }
+
+             goto repeat;
+             break;
+
+    case 4:
              if(SUM!=0)
              {
                  if(sum!=0)
