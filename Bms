@@ -232,8 +232,15 @@ int main()
              cout<<"Balance Enquiry"<<endl;
              break;
     case 5:
-             cout<<"Modify an account"<<endl;
-             break;
+             case 5:
+             cout<<"Enter the account number you want to search for"<<endl;
+             cin>>sam;
+             if(sam==phn_no)
+             {
+                 A.putdata();
+                 cout<<"Enter your New Details";
+                 A.getdata();
+             }
     case 6:
              C.pattern();
              C.space1();
