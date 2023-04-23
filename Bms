@@ -273,6 +273,12 @@ void new_acc::change()
              }
     }
 }
+void new_acc :: show()
+{
+
+		     cout<<"The name of account holder is "<<first_name<<" "<<last_name<<endl;
+
+}
 
 int main()
 {
