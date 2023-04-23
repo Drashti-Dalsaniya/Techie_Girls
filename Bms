@@ -287,7 +287,7 @@ int main()
              goto repeat;
              break;
 
-    case 4:
+    case 3:
              if(SUM!=0)
              {
                  if(sum!=0)
