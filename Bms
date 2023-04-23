@@ -133,6 +133,31 @@ void transaction::show1()
 {
 		     cout<<"The name of account holder is "<<name<<endl;
 }
+void transaction :: check1()
+{
+    {
+             new_acc N;
+             int SUM;
+             if(SUM!=0)
+             {
+
+                 cout<<"Enter the phone number for account you are searching for created account : "<<endl;
+                 cin>>phone;
+                 if(phone==ph_no)
+                 {
+                   N.putdata();
+                 }
+                 else
+                 {
+                   cout<<"Entered phone number is invalid for the details you want to check"<<endl;
+                 }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
+    }
+}
  class close : public account
 {
     protected:
@@ -308,6 +333,7 @@ void new_acc::check()
              }
     }
 }
+
 
 int main()
 {
