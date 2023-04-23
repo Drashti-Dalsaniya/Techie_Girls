@@ -251,6 +251,16 @@ int main()
              C.pattern();
              C.ptdata();
              break;
+    case 7:
+             if(sum==0)
+            {
+				cout<<"No data is entered"<<endl;
+			}
+            else
+            {
+                V.show();
+            }
+            break;
     default:
              cout<<"Exit"<<endl;
              break;
