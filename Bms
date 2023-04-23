@@ -283,6 +283,31 @@ void new_acc :: show()
 		     cout<<"The name of account holder is "<<first_name<<" "<<last_name<<endl;
 
 }
+void new_acc::check()
+{
+  {
+             new_acc N;
+             int SUM;
+             if(SUM!=0)
+             {
+
+                 cout<<"Enter the phone number for account you are searching for created account : "<<endl;
+                 cin>>phone;
+                 if(phone==phn_no)
+                 {
+                   N.Put_data();
+                 }
+                 else
+                 {
+                   cout<<"Entered phone number is invalid for the details you want to check"<<endl;
+                 }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
+    }
+}
 
 int main()
 {
