@@ -223,6 +223,18 @@ int main()
              T.pattern();
              T.putdata();
              }
+              else
+             {
+             T.pattern();
+             T.space1();
+             T.pattern();
+             T.getdata();
+             T.With();
+             T.pattern();
+             T.space2();
+             T.pattern();
+             T.putdata();
+             }
     case 4:
              cout<<"Balance Enquiry"<<endl;
              break;
