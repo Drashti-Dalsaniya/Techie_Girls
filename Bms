@@ -374,7 +374,18 @@ int main()
              }
              goto repeat;
              break;
-    
+     case 5:
+             C.pattern();
+             C.space1();
+             C.pattern();
+             C.gtdata();
+             C.pattern();
+             C.space2();
+             C.pattern();
+             C.ptdata();
+
+             goto repeat;
+             break;
     
     case 6:
              C.pattern();
