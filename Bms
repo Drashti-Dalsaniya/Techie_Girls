@@ -211,6 +211,18 @@ int main()
              cout<<"Press D for Deposit : "<<endl;
              cout<<"Press W for Withdrawal : "<<endl;
              cin>>trans;
+              if(trans=='D')
+             {
+             T.pattern();
+             T.space1();
+             T.pattern();
+             T.getdata();
+             T.Dep();
+             T.pattern();
+             T.space2();
+             T.pattern();
+             T.putdata();
+             }
     case 4:
              cout<<"Balance Enquiry"<<endl;
              break;
