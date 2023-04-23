@@ -205,7 +205,12 @@ int main()
              N.pattern();
              N.Put_data();
              break;
-    
+    case 2:
+             char trans,D,W;
+             cout<<"Enter the type of transaction : "<<endl;
+             cout<<"Press D for Deposit : "<<endl;
+             cout<<"Press W for Withdrawal : "<<endl;
+             cin>>trans;
     case 4:
              cout<<"Balance Enquiry"<<endl;
              break;
