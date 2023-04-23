@@ -494,14 +494,7 @@ int main()
              cout<<"Exit"<<endl;
              break;
 
-    case 9:
-             cout<<"For transaction"<<endl;
-             break;
-    default:
-             cout<<"Exit"<<endl;
-             break;
-
-    }
+    
     return 0;
 
 }
