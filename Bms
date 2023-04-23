@@ -288,7 +288,22 @@ int main()
              break;
 
     case 4:
-             cout<<"Balance Enquiry"<<endl;
+             if(SUM!=0)
+             {
+                 if(sum!=0)
+                    {
+                       N.change();
+                    }
+                  if(sum3!=0)
+                    {
+                       T.change1();
+                    }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
+             goto repeat;
              break;
     case 5:
              case 5:
