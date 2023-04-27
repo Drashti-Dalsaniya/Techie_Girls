@@ -386,7 +386,7 @@ void transaction :: close1()
                  cout<<"No data is entered for created account. "<<endl;
              }
 }
-int main()
+int main() //main function 
 {
     cout<<endl;
     cout<<endl;
