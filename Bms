@@ -391,11 +391,9 @@ int main()
     account A;
     cout<<endl;
     cout<<endl;
-    system("Color 04");
-    cout<<"\t\t\t:: WELCOME  TO  XYZ  BANK ::"<<endl;
     cout<<endl;
-    cout<<"\t\t\t\tLoading ";
-    A.pat();
+    system("Color 04");
+    cout<<endl;
     cout<<endl;
 
     new_acc N;
