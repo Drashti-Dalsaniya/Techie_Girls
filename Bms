@@ -551,7 +551,9 @@ int main()
              goto repeat;
              break;
 
-    case 5:
+    case 5: 
+             // case for show name of account holder
+             // if there is any input either create or transaction then an only this loop will execute 
             if(SUM!=0)
              {
                  if(sum!=0)
@@ -563,6 +565,7 @@ int main()
                           T.show1();//method is call through T for showing name of acc holder details of Trasaction account 
                     }
              }
+              //  else will execute only when there is no any entries either for create or transaction
              else
              {
                  cout<<"No data is entered"<<endl;
