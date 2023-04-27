@@ -431,10 +431,11 @@ int main()
         sum3=sum3+1;
         
     }
-    SUM=SUM+sum+sum3;
+    SUM=SUM+sum+sum3; //addition of sum and sum3
     if(num==7)
     {
              A.pattern();
+             //details of project name and project members
              cout<<"BANK MANAGEMENT PROJECT"<<endl;
              cout<<"22CS017 --> DRASHTI"<<endl;
              cout<<"22CS070 --> PRAGATI"<<endl;
