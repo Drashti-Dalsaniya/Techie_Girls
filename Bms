@@ -409,7 +409,7 @@ int main()
     A.pattern();   // calling of method through object A
     cout<<"\t\t\t::  SELECTION LIST  ::"<<endl;
     A.pattern();    // calling of method through object A
-
+   // created 7 various option for user
     cout<<"1. Create An Account"<<endl;
     cout<<"2. For Transactions"<<endl;
     cout<<"3. Balance Enquiry"<<endl;
@@ -418,10 +418,10 @@ int main()
 	cout<<"6. Remove existing account"<<endl;
 	cout<<"7. Exit"<<endl;
     cout<<endl;
-    A.pattern();
+    A.pattern(); 
     cout<<"\t\t\tSELECT YOUR OPTION FROM 1 TO 8 : ";
     cin>>num;
-
+    
     if(num==1)
     {
         sum=sum+1;
