@@ -575,6 +575,8 @@ int main()
              break;
 
     case 6:
+             // case for closing an account 
+             // if there is any input either create or transaction then an only this loop will execute 
              if(SUM!=0)
              {
                  if(sum!=0)
@@ -586,6 +588,7 @@ int main()
                        T.close1();
                     }
              }
+             //  else will execute only when there is no any entries either for create or transaction
              else
              {
                  cout<<"No data is entered"<<endl;
