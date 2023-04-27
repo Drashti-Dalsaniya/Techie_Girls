@@ -598,7 +598,7 @@ int main()
              break;
 
     case 7:
-
+             //case for exit from code
              cout<<"EXIT";
              break;
 
