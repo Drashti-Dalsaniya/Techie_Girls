@@ -512,11 +512,11 @@ int main()
              {
                  if(sum!=0)
                     {
-                          N.enquiry();
+                          N.enquiry();//method is call through N for changing details of new account 
                     }
                  if(sum3!=0)
                     {
-                          T.enquiry1();
+                          T.enquiry1();//method is call through T for changing details of transaction account
                     }
              }
              // in else will execute only when there is no any entries either for create or transaction
