@@ -395,11 +395,12 @@ int main()
     system("Color 04");
     cout<<endl;
     cout<<endl;
-
+  // objects are created 
     new_acc N;
     transaction T;
+ // variables are created which are used in switch case 
     int i;
-    char repeat;
+    char repeat; 
     unsigned long long int sam, ph_no;
     int num,sum=0,sum3=0,SUM=0,pswd;
 
