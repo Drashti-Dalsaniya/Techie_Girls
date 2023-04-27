@@ -403,11 +403,12 @@ int main()
     char repeat; 
     unsigned long long int sam, ph_no;
     int num,sum=0,sum3=0,SUM=0,pswd;
-
-    repeat:
-    A.pattern();
+ 
+    repeat: 
+    // goto statement is created to show selection list and method again and again
+    A.pattern();   // calling of method through object A
     cout<<"\t\t\t::  SELECTION LIST  ::"<<endl;
-    A.pattern();
+    A.pattern();    // calling of method through object A
 
     cout<<"1. Create An Account"<<endl;
     cout<<"2. For Transactions"<<endl;
