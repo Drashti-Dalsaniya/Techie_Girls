@@ -447,9 +447,7 @@ int main()
     switch(num)
     {
     case 1:
-             cout<<"For verification please enter the password : ";
-             cin>>pswd;
-             if(pswd==1234)
+             
              {
                  N.pattern();
                  N.space1();
