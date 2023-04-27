@@ -445,11 +445,12 @@ int main()
     }
     else
     {
-    switch(num)
+    switch(num) // switch statement is created 
     {
-    case 1:
+    case 1: //case for creating an account
              
-             {
+             {  
+                //calling of method of creating account through object N of class new account
                  N.pattern();
                  N.space1();
                  N.pattern();
@@ -461,6 +462,7 @@ int main()
              }
              else
              {
+                 // if condition is false then else will be executed
                  cout<<"Incorrect Password "<<endl;
              }
              goto repeat;
