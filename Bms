@@ -581,11 +581,11 @@ int main()
              {
                  if(sum!=0)
                     {
-                       N.close();
+                       N.close();//method is call through N for closing of new account 
                     }
                   if(sum3!=0)
                     {
-                       T.close1();
+                       T.close1();//method is call through N for closing of transaction account
                     }
              }
              //  else will execute only when there is no any entries either for create or transaction
