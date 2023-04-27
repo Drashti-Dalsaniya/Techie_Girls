@@ -388,11 +388,11 @@ void transaction :: close1()
 }
 int main()
 {
-    account A;
     cout<<endl;
     cout<<endl;
-    cout<<endl;
-    system("Color 04");
+ // black color is added to background and red color for text 
+ // code for black is 0 and for red is 4
+    system("Color 04"); 
     cout<<endl;
     cout<<endl;
   // objects are created 
@@ -403,7 +403,7 @@ int main()
     char repeat; 
     unsigned long long int sam, ph_no;
     int num,sum=0,sum3=0,SUM=0,pswd;
- 
+    account A;
     repeat: 
     // goto statement is created to show selection list and method again and again
     A.pattern();   // calling of method through object A
@@ -418,7 +418,7 @@ int main()
 	cout<<"6. Remove existing account"<<endl;
 	cout<<"7. Exit"<<endl;
     cout<<endl;
-    A.pattern(); 
+    A.pattern();
     cout<<"\t\t\tSELECT YOUR OPTION FROM 1 TO 8 : ";
     cin>>num;
     
