@@ -556,11 +556,11 @@ int main()
              {
                  if(sum!=0)
                     {
-                          N.show();
+                          N.show();//method is call through N for showing name of acc holder details of new account 
                     }
                  if(sum3!=0)
                     {
-                          T.show1();
+                          T.show1();//method is call through T for showing name of acc holder details of Trasaction account 
                     }
              }
              else
