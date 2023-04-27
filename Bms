@@ -465,17 +465,17 @@ int main()
                  // if condition is false then else will be executed
                  cout<<"Incorrect Password "<<endl;
              }
-             goto repeat;
+             goto repeat; // switch statement
              break;
 
     case 2:
-             char trans,D,W;
+             char trans,D,W; //variables are created 
              cout<<"Enter the type of transaction : "<<endl;
              cout<<"Press D for Deposit : "<<endl;
              cout<<"Press W for Withdrawal : "<<endl;
              cin>>trans;
 
-             if(trans=='D')
+             if(trans=='D')// this loop will executed when user input and variable D will equal
              {
              T.pattern();
              T.space1();
@@ -488,7 +488,7 @@ int main()
              T.putdata();
              }
 
-             if(trans=='W')
+             if(trans=='W')// this loop will executed when user input and variable W will equal
              {
              T.pattern();
              T.space1();
