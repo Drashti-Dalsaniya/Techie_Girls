@@ -2,25 +2,31 @@
 #include<iomanip>
 #include<stdio.h>
 #include<conio.h>
+#include<dos.h>
+#include<windows.h>
 using namespace std;
 class account
 {
-    protected:
-    struct person
-       {
-              string name;
-       }p[50];
     protected:
     long double deposit,withdrawal,total;
     unsigned long long int acc_no,acc_balance,net_bal;
     int sum=0;
     char acc_type;
-
     public:
     string name;
     int i;
     unsigned long long int ph_no,phone;
 
+     void pat()
+     {
+         int a=6;
+         for(int i=0;i<a;i++)
+             {
+                cout<<".";
+                Sleep(1000);
+             }
+            cout<<endl;
+     }
      void pattern()
      {
          int a=80;
@@ -30,26 +36,21 @@ class account
              }
             cout<<endl;
      }
-
      void space1()
      {
         cout<<"\t\t\t:: ENTER THE ACCOUNT DETAILS ::"<<endl;
      }
-
      void space2()
      {
         cout<<"\t\t\t:: ACCOUNT DETAILS ::"<<endl;
      }
-
      void show();
      void getdata();
      void putdata();
 
 };
-
 void account :: getdata()
 {
-
             cout<<"Enter the name of account holder : ";
             cin>>name;
             cout<<"Enter the phone number : ";
@@ -60,21 +61,16 @@ void account :: getdata()
             cin>>acc_type;
             cout<<"Enter the account balance : ";
             cin>>acc_balance;
-
 }
-
 void account :: putdata()
 {
-
             cout<<"The name of account holder : "<<name<<endl;
             cout<<"The phone number : "<<ph_no<<endl;
             cout<<"The account number : "<<acc_no<<endl;
-            cout<<"The type of account[J/S] : "<<acc_type<<endl;
-            cout<<"The account balance : "<<acc_balance<<endl;
-            cout<<"The total amount of your account is : "<<total<<endl;
+            cout<<"The type of account[S/C] : "<<acc_type<<endl;
+            cout<<"The account balance : "<<total<<endl;
 
 }
-
 class new_acc : public account
 {
      protected:
@@ -83,13 +79,11 @@ class new_acc : public account
      string dob,address,email,district,taluka,city,state,type;
      int age;
      string first_name,last_name,f_name,m_name,marital,gender;
-
      public:
-    
      void show();
      void change();
      void enquiry();
-     void check();
+     void close();
      void Get_data()
      {
             cout<<"Enter the first name of account holder : ";
@@ -126,12 +120,11 @@ class new_acc : public account
             cin>>state;
             cout<<"Enter your annual income : ";
             cin>>annual_income;
-            cout<<"Enter the type of account : ";
+            cout<<"Enter the type of account[S/C] : ";
             cin>>type;
             cout<<"Enter the amount you would like to deposit : ";
             cin>>net_bal;
     }
-
     void Put_data()
     {
             cout<<"The first name is "<<first_name<<endl;
@@ -153,16 +146,28 @@ class new_acc : public account
             cout<<"Type of your account is "<<type<<endl;
             cout<<"Amount you would like to deposit : "<<net_bal<<endl;
     }
-
 };
-
 void new_acc :: show()
 {
-
-		    cout<<"The name of account holder is "<<first_name<<" "<<last_name<<endl;
-
+             int SUM;
+             if(SUM!=0)
+             {
+                 cout<<"Enter the phone number for account you are searching for created account : ";
+                 cin>>phone;
+                 if(phone==phn_no)
+                 {
+                    cout<<"The name of account holder is "<<first_name<<" "<<last_name<<endl;
+                 }
+                 else
+                 {
+                   cout<<"Entered phone number is invalid"<<endl;
+                 }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
 }
-
 void new_acc :: change()
 {
     {
@@ -170,7 +175,6 @@ void new_acc :: change()
             int SUM;
             if(SUM!=0)
             {
-
                 cout<<"Enter the phone number for account you are searching for created account : "<<endl;
                 cin>>phone;
 
@@ -180,25 +184,22 @@ void new_acc :: change()
                     N.getdata();
                     N.putdata();
                 }
-
                  else
                  {
                    cout<<"Entered phone number is invalid";
                  }
             }
-
              else
              {
                  cout<<"No data is entered"<<endl;
              }
     }
 }
-
 void new_acc :: enquiry()
 {
     {
              int SUM;
-             if(SUM!=0)
+             if(SUM==0)
              {
 
                  cout<<"Enter the phone number for account you are searching for created account : ";
@@ -218,66 +219,91 @@ void new_acc :: enquiry()
              }
     }
 }
-
-void new_acc :: check()
+void new_acc :: close()
 {
-
-  {
+     {
              new_acc N;
              int SUM;
-             if(SUM!=0)
+            if(SUM!=0)
              {
-
-                 cout<<"Enter the phone number for account you are searching for created account : "<<endl;
+                 cout<<"Enter the phone number for account you are searching for created account : ";
                  cin>>phone;
-                 if(phone==phn_no)
-                 {
-                   N.Put_data();
-                 }
-                 else
-                 {
-                   cout<<"Entered phone number is invalid for the details you want to check"<<endl;
-                 }
-             }
-             else
-             {
-                 cout<<"No data is entered"<<endl;
-             }
-    }
+                     if(phone==phn_no)
+                     {
+                               unsigned long long int ad,p,ann,net;
+                               double pin;
+                               string d,e,dis,t,c,s,ta;
+                               int a;
+                               string f,l,ff,m,g;
+                               first_name = f;
+                               last_name = l;
+                               f_name = ff;
+                               dob = d;
+                               age = a;
+                               gender = g;
+                               marital = m;
+                               phn_no = p;
+                               email = e;
+                               aadhar_num = ad;
+                               city = c;
+                               pincode = pin;
+                               taluka = ta;
+                               district = dis;
+                               state = s;
+                               annual_income = ann ;
+                               type = t;
+                               net_bal = net;
+                        }
+                       else
+                       {
+                          cout<<"Entered phone number is invalid for the details you want to check."<<endl;
+                       }
+              }
+      }
 }
-
 class transaction : public account
 {
-    public:
-    void show1();
-    void enquiry1();
-    void change1();
-    void check1();
-    void Dep()
-
+     public:
+     void show1();
+     void enquiry1();
+     void change1();
+     void close1();
+     void Dep()
      {
             cout<<"Deposit amount : ";
             cin>>deposit;
             total=acc_balance+deposit;
             cout<<"total amount is :"<<total<<endl;
      }
-
-    void With()
-
-    {
+     void With()
+     {
             cout<<"Withdrawal amount : ";
             cin>>withdrawal;
             total=acc_balance-withdrawal;
             cout<<"total amount is :"<<total<<endl;
-    }
-
+     }
  };
-
 void transaction :: show1()
 {
-		     cout<<"The name of account holder is "<<name<<endl;
+             int SUM;
+             if(SUM!=0)
+             {
+                cout<<"No data is entered"<<endl;
+             }
+             else
+             {
+                  cout<<"Enter the phone number for account you are searching for used during transaction : ";
+                 cin>>phone;
+                 if(phone==ph_no)
+                 {
+                       cout<<"The name of account holder is "<<name<<endl;
+                 }
+                 else
+                 {
+                   cout<<"Entered phone number is invalid"<<endl;
+                 }
+             }
 }
-
 void transaction :: change1()
 {
     {
@@ -285,7 +311,6 @@ void transaction :: change1()
              int SUM;
              if(SUM!=0)
              {
-
                  cout<<"Enter the phone number for account you are searching for used during transaction : "<<endl;
                  cin>>phone;
                  if(phone==ph_no)
@@ -305,7 +330,6 @@ void transaction :: change1()
              }
     }
 }
-
 void transaction :: enquiry1()
 {
     {
@@ -316,12 +340,11 @@ void transaction :: enquiry1()
              }
              else
              {
-
-                  cout<<"Enter the phone number for account you are searching for used during transaction : ";
+                 cout<<"Enter the phone number for account you are searching for used during transaction : ";
                  cin>>phone;
                  if(phone==ph_no)
                  {
-                       cout<<"The total balance is "<<acc_balance<<endl;
+                       cout<<"The total balance is "<<total<<endl;
                  }
                  else
                  {
@@ -330,70 +353,59 @@ void transaction :: enquiry1()
              }
     }
 }
-
-void transaction :: check1()
+void transaction :: close1()
 {
-    {
-             new_acc N;
+             int phn;
              int SUM;
              if(SUM!=0)
              {
-
-                 cout<<"Enter the phone number for account you are searching for created account : "<<endl;
-                 cin>>phone;
-                 if(phone==ph_no)
+                 cout<<"Enter the phone number for account you are searching for used during transaction : ";
+                 cin>>phn;
+                 if(phn==ph_no)
                  {
-                   N.putdata();
+                       long double to;
+                      unsigned long long int ac,aab;
+                       char aat;
+                       string na;
+                       unsigned long long int ph;
+                     name = na;
+                     ph_no=ph;
+                     acc_no = ac;
+                     acc_type = aat;
+                     acc_balance = aab;
+                     total= to;
+                     cout<<"All record is deleted."<<endl;
                  }
                  else
                  {
-                   cout<<"Entered phone number is invalid for the details you want to check"<<endl;
+                   cout<<"Entered phone number is invalid for the details you want to check."<<endl;
                  }
              }
              else
              {
-                 cout<<"No data is entered"<<endl;
+                 cout<<"No data is entered for created account. "<<endl;
              }
-    }
 }
-
-class close : public account
-{
-    protected:
-     string reason;
-     public:
-     void gtdata()
-    {
-            cout<<"Enter the name of account holder : ";
-            cin>>p[i].name;
-            cout<<"Enter the phone number : ";
-            cin>>ph_no;
-            cout<<"Enter the account number : ";
-            cin>>acc_no;
-            cout<<"Reason why are you closing an account :";
-            cin>>reason;
-    }
-    void ptdata()
-    {
-            cout<<"The name of account holder : "<<p[i].name<<endl;
-            cout<<"The phone number : "<<ph_no<<endl;
-            cout<<"The account number : "<<acc_no<<endl;
-            cout<<"Reason why are you closing an account is: "<<reason<<endl;
-    }
-};
-
 int main()
 {
-
     account A;
-    close C;
+    cout<<endl;
+    cout<<endl;
+    system("Color 04");
+    cout<<"\t\t\t:: WELCOME  TO  XYZ  BANK ::"<<endl;
+    cout<<endl;
+    cout<<"\t\t\t\tLoading ";
+    A.pat();
+    cout<<endl;
+
     new_acc N;
     transaction T;
     int i;
     char repeat;
     unsigned long long int sam, ph_no;
-    int num,sum=0,sum3=0,SUM=0;
+    int num,sum=0,sum3=0,SUM=0,pswd;
 
+    repeat:
     A.pattern();
     cout<<"\t\t\t::  SELECTION LIST  ::"<<endl;
     A.pattern();
@@ -402,14 +414,11 @@ int main()
     cout<<"2. For Transactions"<<endl;
     cout<<"3. Balance Enquiry"<<endl;
     cout<<"4. Update information of existing account"<<endl;
-    cout<<"5. Remove existing account"<<endl;
-    cout<<"6. Name of the all account holders"<<endl;
-	cout<<"7. Check the details of an existing account"<<endl;
-	cout<<"8. Exit"<<endl;
-    
-	repeat:
+    cout<<"5. Name of the all account holders"<<endl;
+	cout<<"6. Remove existing account"<<endl;
+	cout<<"7. Exit"<<endl;
     cout<<endl;
-     A.pattern();
+    A.pattern();
     cout<<"\t\t\tSELECT YOUR OPTION FROM 1 TO 8 : ";
     cin>>num;
 
@@ -417,32 +426,43 @@ int main()
     {
         sum=sum+1;
     }
-
     if(num==2)
     {
         sum3=sum3+1;
     }
-
     SUM=SUM+sum+sum3;
-
-    if(num==8)
+    if(num==7)
     {
-      cout<<"Exit";
+             A.pattern();
+             cout<<"BANK MANAGEMENT PROJECT"<<endl;
+             cout<<"22CS017 --> DRASHTI"<<endl;
+             cout<<"22CS070 --> PRAGATI"<<endl;
+             cout<<"22CS091 --> SHREYA"<<endl;
+             A.pattern();
+             cout<<"Exit";
     }
     else
     {
     switch(num)
-   {
+    {
     case 1:
-             N.pattern();
-             N.space1();
-             N.pattern();
-             N.Get_data();
-             N.pattern();
-             N.space2();
-             N.pattern();
-             N.Put_data();
-
+             cout<<"For verification please enter the password : ";
+             cin>>pswd;
+             if(pswd==1234)
+             {
+                 N.pattern();
+                 N.space1();
+                 N.pattern();
+                 N.Get_data();
+                 N.pattern();
+                 N.space2();
+                 N.pattern();
+                 N.Put_data();
+             }
+             else
+             {
+                 cout<<"Incorrect Password "<<endl;
+             }
              goto repeat;
              break;
 
@@ -466,7 +486,7 @@ int main()
              T.putdata();
              }
 
-             else
+             if(trans=='W')
              {
              T.pattern();
              T.space1();
@@ -493,7 +513,10 @@ int main()
                           T.enquiry1();
                     }
              }
-
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
              goto repeat;
              break;
 
@@ -517,52 +540,16 @@ int main()
              break;
 
     case 5:
-             C.pattern();
-             C.space1();
-             C.pattern();
-             C.gtdata();
-             C.pattern();
-             C.space2();
-             C.pattern();
-             C.ptdata();
-
-             goto repeat;
-             break;
-
-    case 6:
-          if(sum==0)
-            {
-
-				cout<<"No data is entered"<<endl;
-			}
-          else
-            {
-                N.show();
-            }
-          if(sum3==0)
-            {
-				cout<<"No data is entered"<<endl;
-			}
-          else
-            {
-                T.show1();
-            }
-
-            goto repeat;
-            break;
-
-    case 7:
-
-             if(SUM!=0)
+            if(SUM!=0)
              {
                  if(sum!=0)
-                  {
-                       N.check();
-                  }
-                  if(sum3!=0)
-                  {
-                       T.check1();
-                  }
+                    {
+                          N.show();
+                    }
+                 if(sum3!=0)
+                    {
+                          T.show1();
+                    }
              }
              else
              {
@@ -571,14 +558,31 @@ int main()
              goto repeat;
              break;
 
-    case 8:
-             cout<<"No such case is found."<<endl;
+    case 6:
+             if(SUM!=0)
+             {
+                 if(sum!=0)
+                    {
+                       N.close();
+                    }
+                  if(sum3!=0)
+                    {
+                       T.close1();
+                    }
+             }
+             else
+             {
+                 cout<<"No data is entered"<<endl;
+             }
+             goto repeat;
+             break;
+
+    case 7:
+
+             cout<<"EXIT";
              break;
 
     }
-
     }
-
     return 0;
-
-    }
+}
