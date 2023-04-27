@@ -469,6 +469,7 @@ int main()
              break;
 
     case 2:
+              // case for transaction
              char trans,D,W; //variables are created 
              cout<<"Enter the type of transaction : "<<endl;
              cout<<"Press D for Deposit : "<<endl;
@@ -505,6 +506,7 @@ int main()
              break;
 
     case 3:
+             // if there is any input either create or transaction then an only this loop will execute
              if(SUM!=0)
              {
                  if(sum!=0)
@@ -516,12 +518,13 @@ int main()
                           T.enquiry1();
                     }
              }
-             else
+             // in else will execute only when there is no any entries either for create or transaction
+             else 
              {
                  cout<<"No data is entered"<<endl;
              }
 
-             goto repeat;
+             goto repeat; 
              break;
 
     case 4:
