@@ -505,8 +505,9 @@ int main()
              goto repeat;
              break;
 
-    case 3:
-             // if there is any input either create or transaction then an only this loop will execute
+    case 3:  
+             // case for enquiry
+             // if there is any input either create or transaction then an only this loop will execute 
              if(SUM!=0)
              {
                  if(sum!=0)
@@ -528,6 +529,8 @@ int main()
              break;
 
     case 4:
+             // case for changing details of existing account
+             // if there is any input either create or transaction then an only this loop will execute 
              if(SUM!=0)
              {
                  if(sum!=0)
@@ -539,6 +542,7 @@ int main()
                        T.change1();
                     }
              }
+             //  else will execute only when there is no any entries either for create or transaction
              else
              {
                  cout<<"No data is entered"<<endl;
