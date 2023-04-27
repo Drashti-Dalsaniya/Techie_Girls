@@ -422,11 +422,11 @@ int main()
     cout<<"\t\t\tSELECT YOUR OPTION FROM 1 TO 8 : ";
     cin>>num;
     
-    if(num==1)
+    if(num==1) //this loop is created if we enter or select option 1 then in sum their is increment
     {
         sum=sum+1;
     }
-    if(num==2)
+    if(num==2) //this loop is created if we enter or select option 2 then in sum3 their is increment
     {
         sum3=sum3+1;
         
