@@ -1,14 +1,14 @@
-#include<iostream>
+#include<iostream>  //library 
 #include<iomanip>
 #include<stdio.h>
 #include<windows.h>
 #include<conio.h>
 
 using namespace std;
-class account
+class account   //base class is created
 {
-    protected:
-    long double deposit,withdrawal,total;
+    protected: 
+    long double deposit,withdrawal,total;  // variables are created
     unsigned long long int acc_no,acc_balance,net_bal;
     int sum=0;
     char acc_type;
@@ -17,7 +17,7 @@ class account
     int i;
     unsigned long long int ph_no,phone;
 
-     void pat()
+     void pat() // method is created for loading and also add delay of 1000
      {
          int a=6;
          for(int i=0;i<a;i++)
@@ -27,7 +27,7 @@ class account
              }
             cout<<endl;
      }
-     void pattern()
+     void pattern() // method for pattern
      {
          int a=80;
          for(int i=0;i<a;i++)
@@ -44,9 +44,9 @@ class account
      {
         cout<<"\t\t\t:: ACCOUNT DETAILS ::"<<endl;
      }
-     void show();
-     void getdata();
-     void putdata();
+     
+     void getdata(); // method for getting details from user for transaction
+     void putdata(); // method for display details from user for transaction
 
 };
 void account :: getdata()
@@ -71,20 +71,22 @@ void account :: putdata()
             cout<<"The account balance : "<<total<<endl;
 
 }
-class new_acc : public account
+class new_acc : public account //derived class is created
 {
      protected:
+     //variables are created
      unsigned long long int aadhar_num,phn_no,annual_income;
      double pincode;
      string dob,address,email,district,taluka,city,state,type;
      int age;
      string first_name,last_name,f_name,m_name,marital,gender;
      public:
-     void show();
-     void change();
-     void enquiry();
-     void close();
-     void Get_data()
+     //all methods are declared for new account
+     void show(); //method to display name of account holder
+     void change();//method to change details of existing created account
+     void enquiry(); //method to ask balance
+     void close(); //method to close account 
+     void Get_data() //method to get data from user for creating account
      {
             cout<<"Enter the first name of account holder : ";
             cin>>first_name;
@@ -125,7 +127,7 @@ class new_acc : public account
             cout<<"Enter the amount you would like to deposit : ";
             cin>>net_bal;
     }
-    void Put_data()
+    void Put_data()//method to display from user for creating account
     {
             cout<<"The first name is "<<first_name<<endl;
             cout<<"The last name is "<<last_name<<endl;
@@ -261,21 +263,26 @@ void new_acc :: close()
               }
       }
 }
-class transaction : public account
+class transaction : public account//derived class is created
 {
      public:
-     void show1();
-     void enquiry1();
-     void change1();
-     void close1();
-     void Dep()
+     //all methods are declared for transaction
+     void show1();//method to display name of account holder
+     void change();
+     void enquiry(); 
+     void close(); 
+     void Get_data() //method to get data from user for creating account 
+     void enquiry1();//method to ask balance
+     void change1();//method to change details of existing transaction account
+     void close1();//method to close account 
+     void Dep()//method for depositing an amount
      {
             cout<<"Deposit amount : ";
             cin>>deposit;
             total=acc_balance+deposit;
             cout<<"total amount is :"<<total<<endl;
      }
-     void With()
+     void With()//method for withdrawal an amount
      {
             cout<<"Withdrawal amount : ";
             cin>>withdrawal;
